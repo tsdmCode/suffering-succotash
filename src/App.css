@@ -1,0 +1,44 @@
+.app {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2 {
+    text-align: center;
+  }
+  button {
+    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: 50%;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.product-card button:hover {
+  background-color: lightgreen;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
