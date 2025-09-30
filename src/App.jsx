@@ -1,5 +1,8 @@
 import './App.css'
 import { useState, useEffect } from 'react';
+import { FaCartShopping } from "react-icons/fa6";
+
+
 function App() {
   const [cartCount, setcartCount] = useState(0);
   const [data, setData] = useState(null);
@@ -32,8 +35,9 @@ function App() {
   })
   return (
     <div className="app">
-      <h1>Your App</h1>
-      <p>Start building your app here!</p>
+      <h1>My cool store</h1>
+      <p>Buy a lot of shit, please</p>
+      <div className='cart'><FaCartShopping /> Items ({cartCount})</div>
       <section className="product-container">
         {renderedProducts}
       </section>
