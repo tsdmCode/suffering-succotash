@@ -42,7 +42,18 @@
   max-height: 200px;
   object-fit: cover;
 }
+.tag-container {
+  display: flex;
+  gap: 0.5rem;
+  align-self: flex-end;
+  margin-top: 0.5rem;
+}
 
+.tag {
+  border-radius: 4px;
+  padding: 0.25rem;
+  box-shadow: 1px 1px 1px black;
+}
 .cart {
   background-color: lightgreen;
   padding: 1rem;

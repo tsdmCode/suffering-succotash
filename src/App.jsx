@@ -29,7 +29,9 @@ function App() {
         <img src={product.thumbnail} alt="" />
         <h2>{product.title}</h2>
         <p>{product.description}</p>
+        <p>Price: <b>${product.price}</b></p>
         <button onClick={handleClick}>Add to cart</button>
+        <div className='tag-container'>{product.tags.map(tag => <div key={tag} className='tag'>{tag}</div>)}</div>
       </div>
     )
   })
