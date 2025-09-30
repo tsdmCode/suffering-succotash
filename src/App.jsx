@@ -1,7 +1,7 @@
 import './App.css'
 import { useState, useEffect } from 'react';
-import { FaCartShopping } from "react-icons/fa6";
-
+import { Header } from './components/header';
+import { Cart } from './components/cart';
 
 function App() {
   const [cartCount, setcartCount] = useState(0);
@@ -35,9 +35,8 @@ function App() {
   })
   return (
     <div className="app">
-      <h1>My cool store</h1>
-      <p>Buy a lot of shit, please</p>
-      <div className='cart'><FaCartShopping /> Items ({cartCount})</div>
+      <Header />
+      <Cart props={cartCount} />
       <section className="product-container">
         {renderedProducts}
       </section>
