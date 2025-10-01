@@ -36,6 +36,10 @@
   background-color: lightgreen;
 }
 
+.product-card button:active {
+  transform: scale(0.8);
+}
+
 .product-card img {
   width: 100%;
   height: auto;
@@ -53,7 +57,10 @@
   border-radius: 4px;
   padding: 0.25rem;
   box-shadow: 1px 1px 1px black;
+  cursor: pointer;
 }
+
+
 .cart {
   background-color: lightgreen;
   padding: 1rem;
